@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
-import axios from "axios";
+import axios from 'axios';
 
-function App() {
+function Home() {
     async function fetchData() {
         try{
             const response = await axios.get(' https://pokeapi.co/api/v2/pokemon')
@@ -12,13 +11,11 @@ function App() {
             console.error(e)
         }
     }
-fetchData();
-  return (
-    <div>
-      Begin hier met de opdracht!
-        <h1>hello</h1>
-    </div>
-  );
+    fetchData()
+    return (
+        <>
+        </>
+    );
 }
 
-export default App;
+export default Home;
